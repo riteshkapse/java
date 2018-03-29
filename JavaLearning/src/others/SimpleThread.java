@@ -1,4 +1,4 @@
-package concurrency;
+package others;
 
 import java.util.concurrent.TimeUnit;
 
