@@ -45,8 +45,9 @@ public class CachedThreadPoolExecutorExample {
 		es.awaitTermination(10, TimeUnit.SECONDS);
 		
 		threadMap.forEach((String key, String value) -> {
-			System.out.println(key+" "+value);
+			System.out.println(key+" exectured counts: "+value);
 		});
+		System.out.println("====>Total treads used to count \"100\": "+threadMap.size());
 		
 
 	}
