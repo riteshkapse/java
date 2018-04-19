@@ -8,7 +8,7 @@ import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveTask;
 
 /*
- * This program can search for file in specified directory
+ * This program can search for file by name in specified directory
  */
 class FolderSearch extends RecursiveTask<List>{
 	
@@ -52,6 +52,8 @@ public class FileSearchForkJoinExample {
 	public static void main(String[] args) {
 		
 		ForkJoinPool pool = new ForkJoinPool();
+		
+		//Search files with name having "Thread" word
 		List result = pool.invoke(new FolderSearch(new File("/home/user/git/learning/JavaLearning"),"Thread"));
 		pool.shutdown();
 		

@@ -7,7 +7,12 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
 
 
-
+/**
+ * This example will scan complete directory to calculate total folder size including
+ * all files inside.
+ * @author user
+ *
+ */
 class DirSize extends RecursiveTask<Long>{
 	
 	private File file;

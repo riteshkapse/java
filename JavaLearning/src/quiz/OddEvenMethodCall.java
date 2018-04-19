@@ -5,10 +5,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 class OddEven {	
 	public void Odd(String thread){
-		System.out.println(thread +" executing M1...");
+		System.out.println(thread +" executing Odd...");
 	}
 	public void Even(String thread){
-		System.out.println(thread +" executing M2...");
+		System.out.println(thread +" executing Even...");
 	}
 	
 }
