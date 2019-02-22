@@ -54,7 +54,7 @@ public class FileSearchForkJoinExample {
 		ForkJoinPool pool = new ForkJoinPool();
 		
 		//Search files with name having "Thread" word
-		List result = pool.invoke(new FolderSearch(new File("/home/user/git/learning/JavaLearning"),"Thread"));
+		List result = pool.invoke(new FolderSearch(new File("/home/user/git/learning/JavaLearning"),"Example.java"));
 		pool.shutdown();
 		
 		result.forEach((path) ->{
